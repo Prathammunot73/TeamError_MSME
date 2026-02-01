@@ -65,6 +65,7 @@ TeamError_MSME/
 ├── main.py               # fastAPI entry point
 ├── models.py             # API request/response models
 ├── requirements.txt      # backend dependencies
+├── tool_integration.txt
 ├── README.md
 └── frontend/
     ├── public/           # react public assets
