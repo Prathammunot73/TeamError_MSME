@@ -28,20 +28,7 @@ This project implements a Decision-Centric AI Agent that:
 -Re-evaluates decisions when conditions change
 
 ## Work Flow
-External Events
-      ↓
-FastAPI APIs
-      ↓
-Live Operational State
-      ↓
-LangGraph Decision Agent
-(Observe → Decide → Validate)
-      ↓
-Action Execution
-      ↓
-Explanation & Insights
-      ↓
-(Continuous Loop on State Change)
+External Events--> FastAPI APIs--> Live Operational State--> LangGraph Decision Agent(Observe → Decide → Validate)--> Action Execution--> Explanation & Insights-->(Continuous Loop on State Change)
 
 
 ## Tech Stack
