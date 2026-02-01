@@ -22,8 +22,6 @@ State Management
 In-Memory State
 Stores live operational data for fast decision-making.
 
-SQLite (Optional)
-Provides persistent storage for operational state and auditability.
 
 Decision Logic
 
