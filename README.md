@@ -28,53 +28,21 @@ This project implements a Decision-Centric AI Agent that:
 -Re-evaluates decisions when conditions change
 
 ## Work Flow
- ┌────────────────────┐
- │ External Events    │
- │ (Orders, Inventory │
- │  Staff Updates)    │
- └─────────┬──────────┘
-           │  API Calls
-           ▼
- ┌────────────────────┐
- │ FastAPI Layer      │
- │ (/order, /inventory│
- │  /staff)           │
- └───────────────────┘
-           |
-           ▼
- ┌───────────────────┐
- │ Live State Store  │
- │ (Agent Memory)    │
- │ Orders            │
- │ Inventory         │
- │ Staff             │
- └──────────────────┘
-           │
-           ▼
- ┌────────────────────┐
- │ AI Decision Agent  │
- │ (LangGraph)        │
- │ ─ Observe          │
- │ ─ Detect Bottleneck │
- │ ─ Decide Action    │
- └───────────────────┘
-           │
-           ▼
- ┌────────────────────┐
- │ Action Executor    │
- │ Task Assignment    │
- │ Rescheduling       │
- │ Alerts             │
- └───────────────────┘
-           │
-           ▼
- ┌────────────────────┐
- │ Explanation Layer  │
- │ (LLM via Groq)     │
- │ Why decision taken │
- └───────────────────┘
-           │
-           └───────▶ (Continuous Loop Back to Agent)
+External Events
+      ↓
+FastAPI APIs
+      ↓
+Live Operational State
+      ↓
+LangGraph Decision Agent
+(Observe → Decide → Validate)
+      ↓
+Action Execution
+      ↓
+Explanation & Insights
+      ↓
+(Continuous Loop on State Change)
+
 
 ## Tech Stack
 
