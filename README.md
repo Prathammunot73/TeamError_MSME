@@ -137,8 +137,6 @@ http://localhost:3000
 ```
 
 ---
-Below is the **correct way to add your example** in the README.
-Clear, realistic, and consistent with your agent + daily insight feature.
 
 ### 📍 Place this under: **Example API Interaction** (replace the old example)
 
@@ -146,7 +144,7 @@ Clear, realistic, and consistent with your agent + daily insight feature.
 
 ## Example API Interaction
 
-### Input (Customer Order)
+### Input (customer order)
 
 ```json
 {
@@ -198,7 +196,7 @@ Clear, realistic, and consistent with your agent + daily insight feature.
 
 ---
 
-## Why this example matters (short, judge-friendly)
+## Why this example matters 
 - Shows end-to-end decision flow.
 - Demonstrates order rejection with reasoning
 - Highlights bottleneck detection
