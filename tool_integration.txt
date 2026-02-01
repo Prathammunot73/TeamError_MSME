@@ -1,0 +1,53 @@
+Core Technologies
+Programming Language
+
+Python
+Used for implementing backend services, agent workflows, decision logic, and data processing.
+
+API Framework
+
+FastAPI
+Exposes REST APIs for receiving operational inputs such as customer orders, inventory updates, and staff availability.
+
+Uvicorn
+ASGI server used to run the FastAPI application efficiently.
+
+Agent Framework
+
+LangGraph
+Orchestrates the decision-centric AI agent using a state graph, enabling conditional flows and continuous re-evaluation.
+
+State Management
+
+In-Memory State
+Stores live operational data for fast decision-making.
+
+SQLite (Optional)
+Provides persistent storage for operational state and auditability.
+
+Decision Logic
+
+Custom Python Rules
+Implements domain-specific logic for order acceptance, task assignment, bottleneck detection, and escalation.
+
+Large Language Model (LLM)
+
+Groq (Mistral / Phi models)
+Used for fast reasoning, explanation generation, and business insight summaries.
+
+API Key Required: GROQ_API_KEY
+The API key is securely loaded using environment variables.
+
+Supporting Libraries
+
+Pydantic
+Defines and validates API request and response schemas.
+
+pandas
+Used for operational data analysis and insight generation.
+
+openpyxl
+Enables Excel-based inventory and report handling.
+
+Environment Configuration
+GROQ_API_KEY=your_groq_api_key_here
